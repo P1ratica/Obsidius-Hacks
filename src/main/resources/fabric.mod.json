@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "obsidius-addon",
+  "version": "${version}",
+  "name": "Obsidius Client",
+  "description": "A bunch of hacks taken from different addons.",
+  "authors": [
+    "Grandalfwise"
+  ],
+  "contact": {
+    "repo": "https://github.com/grandalfwise"
+  },
+  "icon": "assets/icon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "obsidiusdevelopment.obsidiusclient.ObsidiusClient"
+    ]
+  },
+  "mixins": [
+    "obsidius-client.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "106,13,173"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}

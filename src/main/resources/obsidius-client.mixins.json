@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "obsidiusdevelopment.obsidiusclient.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "DisconnectedScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "InventoryScreenMixinBow",
+    "ClientPlayerInteractionManagerMixin",
+    "accessor.ClientConnectionAccessor",
+    "PlayerEntityMixin",
+    "ObsidiusSplashTextMixin"
+  ]
+}
